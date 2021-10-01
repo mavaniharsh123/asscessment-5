@@ -1,0 +1,109 @@
+body{
+    background-color: yellow;
+}
+.con{
+    display: flex;
+    justify-content:space-evenly ;
+    flex-wrap: nowrap;
+    margin:auto;
+    padding: 60px;
+}
+.box{
+    background-color:magenta;
+    border: 4px solid black;
+    height: 100px;
+    width: 100px;
+    animation-name: skew-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes skew-animation{
+        50%{
+            transform: skewX(-30deg);
+        }
+    
+        100%{
+            transform: skewX(30deg);
+        }
+}
+.case{
+    background-color: skyblue;
+    border: 4px solid black;
+    height: 100px;
+    width:100px;
+    animation-name: skew-animation1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+@keyframes skew-animation1{
+    0%{
+        transform: skewY(25deg);
+    }
+    100%{
+        transform: skewY(-25deg);
+    }
+}
+.ease{
+    background-color: coral;
+    border: 4px solid black;
+    height: 100px;
+    width:100px;
+    animation-name: rotate-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotate-animation {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.bb1{
+    height: 10px;
+    width: 100px;
+    background-color: rgb(209, 19, 184);
+    animation-name: scale-animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scale-animation{
+    100%{
+        transform: scaleY(10);
+    }
+}
+
+.bb2{
+    height: 100px;
+    width: 10px;
+    background-color: gray;
+    animation-name: scale-animation1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes  scale-animation1{
+    100%{
+        transform: scaleX(10);
+    }
+}
+.bb3{
+    height: 100px;
+    width: 100px;
+    background-color:limegreen;
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    100%{
+        transform: rotate(-90deg);
+    }
+}
+a{
+    color: orangered;
+    text-decoration: underline;
+    margin-left: 40%;
+}
